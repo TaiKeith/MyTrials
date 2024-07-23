@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 75px;
+}
+
+img {
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+#img-caption {
+	margin: 15px 0 5px 0;
+}
+
+#gun {
+    max-width: 100px;
+}
+.transparent-navbar {
+    background-color: transparent;
+    padding: 10px 0;
+    /*position: fixed;*/
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+
+.transparent-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.transparent-navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.transparent-navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.transparent-navbar a:hover {
+    color: #555;
+}
+
+.page-content {
+    margin-top: 80px; /* Adjust as needed to create space below the navigation bar */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*height: calc(100vh - 200px);*/
+}
+
+.tweet {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.tweet img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;    
+}
+
+.tweet h3 {
+    font-size: 20px;
+}
+
+.tweet p {
+    font-size: 16px;
+}
+
+.footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	* {
+		scroll-behavior: smooth;
+	}
+}

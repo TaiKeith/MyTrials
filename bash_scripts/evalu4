@@ -1,0 +1,18 @@
+#!/usr/bin/env bash                                                             
+
+var="Tech"
+if [ -e "$var" ]
+then
+    if [ -f "$var" ]
+    then
+        echo "Betty"
+    elif [ -d "$var" ]
+    then
+        echo "School"
+    fi
+else
+    echo "$var doesn't exist"
+fi
+
+# Checks if Tech exists, otherwise prints “Tech doesn’t exist”. If it exists and it’s a file, print “Betty”, otherwise if it’s a directory, print “School”.
+

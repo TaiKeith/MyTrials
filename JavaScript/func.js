@@ -1,0 +1,7 @@
+const b = 79;
+function myFunction(a) {
+    console.log(a + b);
+}
+
+//const b = 79;
+myFunction(10);

@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    font-family: Arial, sans-serif;
+}
+
+.transparent-navbar {
+    background-color: transparent;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(10px); /* Adds a blur effect to the background */
+}
+
+.transparent-navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0;
+}
+
+.transparent-navbar li {
+    margin: 0;
+    padding: 0;
+}
+
+.transparent-navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.transparent-navbar a:hover {
+    color: #555;
+}
+
+.page-content {
+    margin-top: 80px; /* Adjust as needed to create space below the navigation bar */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*height: calc(100vh - 200px);*/
+}

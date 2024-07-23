@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+}
+
+label {
+    display: block;
+    text-align: left;
+    padding: 5px;
+    margin: 1px;
+}
+
+fieldset:first-of-type input {
+    display: block;
+    width: 25%;
+    min-height: 20px;
+}
+
+#number {
+    display: inline;
+    width: min-content;
+}

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script displays the content of the file /etc/passwd
+#	Only displays username, user id and Home directory path for the user
+
+filename="/etc/passwd"
+while IFS= read -r line; do
+	echo "$line" | cut -f1,3,6 -d':'
+done < $filename
+
+
+# while IFS= read -r line: This initiates a while loop that reads each line of the file specified by $filename. The IFS= part ensures that leading and trailing whitespace is preserved, and the -r option prevents backslashes from being treated as escape characters.
+# echo "$line" | cut -d":" -f1,3,6: Within the loop, each line is passed to the cut command. The -d":" option specifies that the delimiter separating fields is a colon, and -f1,3,6 specifies which fields to extract (username, user ID, and home directory).

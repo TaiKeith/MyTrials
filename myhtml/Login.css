@@ -1,0 +1,47 @@
+body {
+	font-family: Arial, sans-serif;
+	background-image: url('images/CoolDP.jpeg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.login-container {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 400px;
+	background-color: transparent;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(100px);
+}
+
+h2 {
+	text-align: center;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+button {
+	width: 100%;
+	padding: 10px;
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #0056b3;
+}
