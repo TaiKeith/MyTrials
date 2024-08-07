@@ -1,0 +1,6 @@
+flask
+Flask Flask-Login Flask-JWT-Extended
+Flask_SQLAlchemy
+flask-wtf
+flask-bcrypt
+email-validator
