@@ -91,6 +91,7 @@ def login():
             return redirect(url_for('dashboard'))
         else:
             flash('Login Unsuccessful. Please check username and password', 'danger')
+            return redirect(url_for('login'))
     return render_template('login.html', form=form)
 
 
@@ -113,7 +114,7 @@ def dashboard():
     return render_template('dashboard.html', username=current_user.username)
 
 
-@app.route('/logout')
+@app.route('/logout', methods=['GET', 'POST'])
 @login_required
 def logout():
     logout_user()

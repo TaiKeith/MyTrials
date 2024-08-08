@@ -14,6 +14,17 @@
 		{{ form.submit }}
 	</form> -->
 
+	<!-- Flash messages block -->
+	{% with messages = get_flashed_messages(with_categories=true) %}
+  		{% if messages %}
+    		<ul class="flashes">
+      			{% for category, message in messages %}
+      			<span style="color: red;">[{{ message }}]</span>
+      			{% endfor %}
+    		</ul>
+  		{% endif %}
+	{% endwith %}
+
 	<form method="POST" action="">
       {{ form.hidden_tag() }}
       <div>
